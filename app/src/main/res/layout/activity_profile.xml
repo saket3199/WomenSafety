@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile"
+    android:background="@color/bluee">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:text="My Profile"
+                    android:textColor="@color/white"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/ic_girl" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/About"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="100dp"
+                android:layout_weight="1"
+                android:paddingRight="20dp"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/ic_profile"
+                android:background="@drawable/orangerectangle"
+                android:fontFamily="sans-serif-black"
+                android:text="About us"
+                android:textColor="@color/greey"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/resetpass"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingRight="20dp"
+                android:drawableEnd="@drawable/ic_reset"
+                android:background="@drawable/greenrectangle"
+                android:fontFamily="sans-serif-black"
+                android:text="Change Password"
+                android:textColor="@color/greey"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/Signout"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:paddingRight="20dp"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_exit"
+                android:background="@drawable/bluerectangle"
+                android:fontFamily="sans-serif-black"
+                android:text="sign out"
+                android:textColor="@color/greey"
+                android:textSize="16dp" />
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orang"
+    tools:context=".Instructions">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:id="@+id/mainrel">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_white"
+                android:id="@+id/back"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-black"
+                android:layout_below="@id/back"
+                android:layout_marginTop="16dp"
+                android:textSize="24dp"
+                android:text="View Registered"
+                android:id="@+id/tv_heading"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="sans-serif-medium"
+                android:layout_below="@id/tv_heading"
+                android:layout_marginTop="16dp"
+                android:textSize="18dp"
+                android:text="Please follow the steps to setup your acccount."
+                android:id="@+id/tv_info"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_info"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@id/tv_heading"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18dp"
+                    android:text="1. Register your guardian’s phone number."
+                    android:id="@+id/tv_info_2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@id/tv_heading"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18dp"
+                    android:text="2. Always maintain a working internet connection."
+                    android:id="@+id/tv_info_3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@id/tv_heading"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18dp"
+                    android:text="3. SHAKE your phone in case of emergency to alert your guardians."
+                    android:id="@+id/tv_info_4"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="sans-serif"
+                    android:layout_below="@id/tv_heading"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18dp"
+                    android:text="4. SURVEILLANCE MODE will help you capture video and audio in case of emergency"
+                    android:id="@+id/tv_info_1"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:textSize="18dp"
+                    android:paddingVertical="16dp"
+                    android:background="@drawable/white_rectangle_10"
+                    android:text="LETS START NOW"
+                    android:id="@+id/btn_start"/>
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
